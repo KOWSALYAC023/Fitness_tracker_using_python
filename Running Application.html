@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fitness Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 80%;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1, h3 {
+            text-align: center;
+        }
+        .tracker {
+            margin-top: 20px;
+        }
+        .tracker table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .tracker table th, .tracker table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .tracker table th {
+            background-color: #f0f0f0;
+        }
+        .summary {
+            margin-top: 10px;
+            font-size: 16px;
+            text-align: center;
+        }
+        .search-bar {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+        .search-bar input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-bar button {
+            padding: 10px;
+            margin-left: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: darkgreen;
+        }
+        .available-items {
+            margin-top: 20px;
+        }
+        .available-items table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .available-items table th, .available-items table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .available-items table th {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fitness Tracker</h1>
+        <div class="summary">
+            <p>Total number of items consumed today: 6</p>
+            <p>Calorie Limit: 2000 | Total Calories Consumed: 2357.00 | Calories Left: -357.00</p>
+        </div>
+
+        <div class="tracker">
+            <h3>Tracker</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Food Item</th>
+                        <th>Calories</th>
+                        <th>Carbs</th>
+                        <th>Fats</th>
+                        <th>Protein</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pancakes</td>
+                        <td>70.00</td>
+                        <td>7.00</td>
+                        <td>2.00</td>
+                        <td>2.00</td>
+                    </tr>
+                    <tr>
+                        <td>Potato Pancakes</td>
+                        <td>70.00</td>
+                        <td>7.00</td>
+                        <td>2.00</td>
+                        <td>2.00</td>
+                    </tr>
+                    <tr>
+                        <td>Sandwiches</td>
+                        <td>70.00</td>
+                        <td>7.00</td>
+                        <td>2.00</td>
+                        <td>2.00</td>
+                    </tr>
+                    <tr>
+                        <td>Sandwiches</td>
+                        <td>70.00</td>
+                        <td>7.00</td>
+                        <td>2.00</td>
+                        <td>2.00</td>
+                    </tr>
+                    <tr>
+                        <td>King of Chapel</td>
+                        <td>62.00</td>
+                        <td>6.00</td>
+                        <td>2.00</td>
+                        <td>4.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Enter food item name..." />
+            <button>Search</button>
+        </div>
+
+        <div class="available-items">
+            <h3>Available Items</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Food Item</th>
+                        <th>Calories</th>
+                        <th>Carbs</th>
+                        <th>Fats</th>
+                        <th>Protein</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="5">No items available.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
